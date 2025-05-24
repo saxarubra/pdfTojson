@@ -1,3 +1,64 @@
+# PDF to JSON Converter
+
+Questo progetto consiste in due parti:
+1. Un backend Python (Flask) per la conversione di PDF in JSON
+2. Un frontend Next.js per l'interfaccia utente
+
+## Backend (Python/Flask)
+
+### Requisiti
+- Python 3.8+
+- pip
+
+### Installazione
+```bash
+cd pdf-backend
+python -m venv venv
+source venv/bin/activate  # Su Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### Avvio
+```bash
+python app.py
+```
+Il server sarà disponibile su `http://localhost:5000`
+
+## Frontend (Next.js)
+
+### Requisiti
+- Node.js 16+
+- npm o yarn
+
+### Installazione
+```bash
+cd pdf-frontend
+npm install
+# oppure
+yarn install
+```
+
+### Avvio
+```bash
+npm run dev
+# oppure
+yarn dev
+```
+L'applicazione sarà disponibile su `http://localhost:3000`
+
+## Struttura del Progetto
+```
+pdf-to-json-converter/
+├── pdf-backend/          # Backend Python/Flask
+│   ├── app.py
+│   ├── requirements.txt
+│   └── ...
+└── pdf-frontend/         # Frontend Next.js
+    ├── src/
+    ├── package.json
+    └── ...
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
